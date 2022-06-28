@@ -260,3 +260,13 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
+
+img{
+    display: block;
+    margin: 0px auto;
+   }
+   
+.grid-container {
+    display: grid;
+    row-gap : 50px;
+  }
