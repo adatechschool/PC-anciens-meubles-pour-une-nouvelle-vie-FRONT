@@ -5,7 +5,6 @@ import Cuisine from "@/views/Cuisine.vue";
 import Decoration from "@/views/Decoration.vue";
 import Login from "@/views/Login.vue";
 import Salon from "@/views/Salon.vue";
-import Login from "@/views/Login.vue";
 import Panier from "@/views/Panier.vue";
 
 const router = createRouter({
@@ -19,50 +18,32 @@ const router = createRouter({
     {
       path: "/cuisine",
       name: "Cuisine",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Cuisine.vue"),
+      component: Cuisine,
     },
     {
       path: "/chambre",
       name: "Chambre",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Chambre.vue"),
+      component: Chambre,
     },
     {
       path: "/decoration",
       name: "Decoration",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Decoration.vue"),
+      component: Decoration,
     },
     {
       path: "/login",
       name: "Login",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Login.vue"),
+      component: Login,
     },
     {
       path: "/salon",
       name: "Salon",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Salon.vue"),
+      component: Salon,
     },
     {
       path: "/panier",
       name: "Panier",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("@/views/Panier.vue"),
+      component: Panier,
     },
   ],
 });
