@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="app">
+
+    <header>
+        <div class="navbar">
+
+            <div class="icon">
+                <a href="test.html"><h2 id="logo">AMPUNV</h2></a>
+            </div>
+
+            <navbar class="menu">
+                <ul>
+                    <li><a href="salon.html">SALON</a></li>
+                    <li><a href="cuisine.html">CUISINE</a></li>
+                    <li><a href="chambre.html">CHAMBRE</a></li>
+                    <li><a href="decoration.html">DECORATION</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </navbar>
+
+        </div>
+    </header>
+
+    
+    <main>
+        
+        <div class="search">
+            <input class="srch" type="search" name="search-bar" placeholder="Tape ta recherche ...">
+            <button class="btn" type="submit">Search</button>
+        </div>
+
+
+        <div class="content">
+            <h1>Anciens meubles <br><span>pour </span><br>une nouvelle vie</h1>
+            <h2 id="accroche">Plateforme de ventes de meubles en ligne.</h2>              
+
+                <!-- <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div> -->
+
+        </div>
+    
+        <article class="articles-list">
+            <div class="card">
+                <img src="/img/buffet.jpg" class="card-img-top" alt="buffet en bois">
+            
+                <div class="card-body">
+                <p class="card-text price">{{ price }} €</p>
+                <button type="submit" class="btn btn-primary achat-btn">J'achète !</button>
+                </div>
+            </div>
+            
+            <div class="card" aria-hidden="true">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                </p>
+                <!-- <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a> -->
+                <input class="jachete" type="button" name="achat-btn" tabindex="-1" class="btn btn-primary disabled placeholder col-6">
+                </div>
+            </div>
+        </article>  
+    </main>
+</div>
+
+
+    
+</html>
