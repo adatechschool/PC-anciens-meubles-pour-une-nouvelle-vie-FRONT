@@ -1,14 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
-.main{
+body{
+    background-image: url(/img/enfilade-4-portes-chene-garden-girardeau.jpg);
     width: 100%;
-background-image: url("enfilade-4-portes-chene-garden-girardeau.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .navbar{
@@ -17,14 +19,13 @@ background-image: url("enfilade-4-portes-chene-garden-girardeau.jpg");
     margin: auto;
 }
 
-.icon{
+/* .icon{
     width: 200px;
     float: left;
     height: 70px;
-}
+} */
 
-.logo{
-
+#logo{
     font-size: 35px;
     font-family: Arial;
     text-decoration: underline overline;
@@ -38,6 +39,7 @@ background-image: url("enfilade-4-portes-chene-garden-girardeau.jpg");
     width: 400px;
     float: left;
     height: 70px;
+    margin-left: 15%;
 }
 
 ul{
@@ -49,9 +51,9 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+    margin-left: 8%;
+    margin-top: 3%;
+    font-size: 24px;
 }
 
 ul li a{
@@ -68,12 +70,12 @@ ul li a:hover{
 
 .search{
     width: 330px;
-    float: left;
+    float: center;
     margin-left: 270px;
 }
 
 .srch{
-    font-family: 'Times New Roman';
+    font-family: 'Arial';
     width: 200px;
     height: 40px;
     background: transparent;
@@ -89,11 +91,11 @@ ul li a:hover{
 }
 
 .btn{
-    width: 100px;
-    height: 40px;
+    width: 15%;
+    height: 8%;
     background: #ff7200;
     border: 2px solid #ff7200;
-    margin-top: 13px;
+    /* margin-top: 13px; */
     color: #fff;
     font-size: 15px;
     border-bottom-right-radius: 5px;
@@ -117,16 +119,18 @@ ul li a:hover{
     width: 1200px;
     height: auto;
     margin: auto;
-    color: #fff;
+    color: rgb(255, 251, 228);
     position: relative;
 }
 
-.content .par{
+#accroche{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .content h1{
@@ -162,55 +166,14 @@ ul li a:hover{
     font-size: 65px
 }
 
-.form{
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
-    border-radius: 10px;
-    padding: 25px;
-}
 
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #ff7200;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #ff7200;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus{
-    outline: none;
-}
 
 ::placeholder{
     color: #fff;
     font-family: Arial;
 }
 
-.btnn{
+.btn{
     width: 240px;
     height: 40px;
     background: #ff7200;
@@ -220,13 +183,13 @@ ul li a:hover{
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
-.btnn:hover{
+.btn:hover{
     background: #fff;
     color: #ff7200;
 }
-.btnn a{
+.btn a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -246,7 +209,7 @@ ul li a:hover{
     padding-bottom: 10px;
     text-align: center;
 }
-.icons a{
+/* .icons a{
     text-decoration: none;
     color: #fff;
 }
@@ -259,4 +222,35 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: #ff7200;
+} */
+
+.article-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 0.5em;
+
+}
+
+.card{
+    position:relative;
+    width: 20%;
+    height: 15%;
+    background-color: #f9f0f0ce;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.25);
+}
+.card-img-top{
+    height: 60%;
+    width: 100%;
+}
+.card p{
+    font: 500 16px 'Arial, Helvetica, sans-serif';
+    margin-top: 2%;
+}
+.achat-btn{
+    width: 40%;
+    margin-left: 5px;
 }
