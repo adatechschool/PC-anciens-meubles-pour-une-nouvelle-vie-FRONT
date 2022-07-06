@@ -5,7 +5,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
 <template>
   <header>
-    <RouterLink to="/" id="logo">AMPUNV</RouterLink>
+    <RouterLink to="/home" id="logo">AMPUNV</RouterLink>
 
     <div class="wrapper">
     
