@@ -1,5 +1,9 @@
 <script>
+<<<<<<< HEAD
 import HelloWorld from "@/components/HelloWorld.vue";
+=======
+
+>>>>>>> 31b1f9bc1a2bdafb16f8ee13f267201dd19c397f
 //import TheWelcome from "@/components/TheWelcome.vue";
 
 /*
@@ -47,6 +51,7 @@ export default {
 
 <template>
 
+<<<<<<< HEAD
 <HelloWorld />
 
   <div class="home">
@@ -63,6 +68,18 @@ export default {
         </div>
       </div>
   </div>
+=======
+
+
+<h1>Home</h1>
+<!--
+  <div v-for="f in furnitures" :key="f.id" class="home">
+    <img v-bind:src="f.photo1"/>
+    <h2>{{ f.type }}</h2>
+    <p>{{ f.prix }} €</p>
+    <button>Acheter</button>
+  </div> -->
+>>>>>>> 31b1f9bc1a2bdafb16f8ee13f267201dd19c397f
 </template>
 
 <style>
