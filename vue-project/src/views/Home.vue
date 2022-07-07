@@ -1,4 +1,5 @@
 <script>
+
 //import TheWelcome from "@/components/TheWelcome.vue";
 
 /*
@@ -45,11 +46,15 @@ export default {
 </script>
 
 <template>
+
+
+
 <h1>Home</h1>
+<!--
   <div v-for="f in furnitures" :key="f.id" class="home">
     <img v-bind:src="f.photo1"/>
     <h2>{{ f.type }}</h2>
     <p>{{ f.prix }} €</p>
     <button>Acheter</button>
-  </div>
+  </div> -->
 </template>
