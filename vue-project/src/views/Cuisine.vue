@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <h1>Page Cuisine</h1>
+  <h1>Cuisine</h1>
   <div v-for="f in furnitures" :key="f.id" class="cuisine">
     <img v-bind:src="f.photo1"/>
     <h2>{{ f.type }}</h2>

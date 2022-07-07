@@ -1,25 +1,28 @@
-<script setup>
-console.log("salon")
-const salonFurniture = async () => {
-  try {
-    const response = await fetch("http://localhost:3001/meubles/category/salon");
-    if (!response.ok) {
-      throw new Error(response.status);
-    }
-    const allFurnitureJson = await response.json();
-          console.log(allFurnitureJson);
+<script>
+export default {
+  data() {
+    return {
+      furnitures: [],
+    };
+  },
+
+  mounted() {
+    fetch('http://localhost:3001/meubles/category/salon')
+      .then(response => response.json())
+      .then(data => this.furnitures = data)
+      .catch(err => console.log(err.message))
   }
-  catch (error) { 
-            console.log(error); 
-        }
-}
-salonFurniture();
+};
 </script>
 
 <template>
-    <div class="salon">
-        <p>Page du Salon</p>
-    </div>
+<h1>Salon</h1>
+    <div v-for="f in furnitures" :key="f.id" class="salon">
+    <img v-bind:src="f.photo1"/>
+    <h2>{{ f.type }}</h2>
+    <p>{{ f.prix }} €</p>
+    <button>Acheter</button>
+  </div>
 </template>
 
 <style></style>
