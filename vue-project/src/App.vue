@@ -31,8 +31,11 @@ import HelloWorld from "@/components/HelloWorld.vue";
 <style>
 @import "@/assets/base.css";
 
-header {
+#app {
   font-family: arial;
+}
+
+header {
   font-size: 17px;
 }
 
