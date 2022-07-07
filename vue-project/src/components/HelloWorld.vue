@@ -12,6 +12,7 @@
     margin: auto;
     color: #FFF;
     position: relative;
+    z-index: -10;
 }
 
 .content h1{
