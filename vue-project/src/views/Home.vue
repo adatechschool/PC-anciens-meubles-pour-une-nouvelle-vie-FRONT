@@ -1,4 +1,5 @@
 <script>
+import HelloWorld from "@/components/HelloWorld.vue";
 //import TheWelcome from "@/components/TheWelcome.vue";
 
 /*
@@ -45,15 +46,19 @@ export default {
 </script>
 
 <template>
+
+<HelloWorld />
+
   <div class="home">
     <h1>Home</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
-          <img v-bind:src="f.photo1" class="image"/>
+          <RouterLink to="/cuisine"><img v-bind:src="f.photo1" class="image"/></RouterLink>
           <h2>{{ f.type }}</h2>
           <div class="infos">
           <p>{{ f.prix }} €</p>
-          <button class="button">Acheter</button>
+          <button class="button" type="submit">Acheter</button> 
+          <!--addToBasket() -->
           </div>
         </div>
       </div>
@@ -68,7 +73,7 @@ h1 {
 }
 
 .home {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 81vh;
   left: 0px;

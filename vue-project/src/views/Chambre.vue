@@ -20,7 +20,7 @@ export default {
     <h1>Page Chambre</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
-          <img v-bind:src="f.photo1" class="image"/>
+          <RouterLink to="/cuisine"><img v-bind:src="f.photo1" class="image"/></RouterLink>
           <h2>{{ f.type }}</h2>
           <div class="infos">
           <p>{{ f.prix }} €</p>
@@ -39,7 +39,7 @@ h1 {
 }
 
 .chambre {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 81vh;
   left: 0px;
