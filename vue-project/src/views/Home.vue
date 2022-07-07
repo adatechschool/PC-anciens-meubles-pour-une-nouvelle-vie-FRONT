@@ -1,5 +1,7 @@
 <script setup>
 //import TheWelcome from "@/components/TheWelcome.vue";
+
+/*
 console.log("coucou")
 const allFurniture = async () => {
   try {
@@ -22,9 +24,11 @@ const parseAllFurniture = JSON.parse([allFurnitureObject]);
 //console.log(parseAllFurniture)
 
 //document.write(allFurnitureObject)
+*/
 </script>
 
 <template>
+<h1>Home</h1>
   <div class="home">
     
   </div>

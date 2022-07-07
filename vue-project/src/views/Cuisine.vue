@@ -18,9 +18,10 @@ export default {
 <template>
   <h1>Page Cuisine</h1>
   <div v-for="f in furnitures" :key="f.id" class="cuisine">
-    <h2>{{ f.id }} - {{ f.type }}</h2>
-    <p>{{ f.prix }}</p>
     <img v-bind:src="f.photo1"/>
+    <h2>{{ f.type }}</h2>
+    <p>{{ f.prix }} €</p>
+    <button>Acheter</button>
   </div>
 </template>
 
