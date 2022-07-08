@@ -7,7 +7,7 @@ export default {
   },
 
   mounted() {
-    fetch('http://localhost:3000/meubles/category/cuisine')
+    fetch('http://localhost:3001/meubles/category/cuisine')
       .then(response => response.json())
       .then(data => this.furnitures = data)
       .catch(err => console.log(err.message))

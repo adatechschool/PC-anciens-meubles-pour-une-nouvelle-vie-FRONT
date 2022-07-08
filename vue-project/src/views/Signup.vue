@@ -9,13 +9,13 @@
           <input
           type="nom"
           name="nom"
-          v-model="nom"
+          v-model="name"
           placeholder="Enter a name Here"
         />
         <input
           type="mail"
           name="mail"
-          v-model="mail"
+          v-model="email"
           placeholder="Enter Email Here"
         />
         <input
@@ -49,16 +49,16 @@ export default {
   },
   methods: {
    async signup() {
-    console.warn(this.nom, this.mail, this.password, this.adresse);
-      const { nom, mail, password, adresse } = this;
+    console.warn(this.name, this.email, this.password, this.adresse);
+      const { name, email, password, adresse } = this;
       const res = await fetch(
-        "http://localhost:3000/signup/",
+        "http://localhost:3001/signup/",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({nom, mail, password, adresse})
+          body: JSON.stringify({name, email, password, adresse})
         }
       );
       const data = await res.json();
@@ -121,7 +121,7 @@ export default {
 
 .signup{
     width: 285px;
-    height: 370px;
+    /*height: 370px;*/
     background: linear-gradient(to top, rgba(240, 235, 235, 0.84)50%,rgba(240, 235, 235, 0.84)50%);
     position: absolute;
     top: 100px;
@@ -151,7 +151,7 @@ export default {
     border-top: none;
     border-right: none;
     border-left: none;
-    color: #fff;
+    color: rgb(22, 22, 22);
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;

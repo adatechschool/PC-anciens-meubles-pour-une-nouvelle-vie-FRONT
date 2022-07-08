@@ -38,7 +38,7 @@ export default {
   },
 
   mounted() {
-    fetch('http://localhost:3000/meubles')
+    fetch('http://localhost:3001/meubles')
       .then(response => response.json())
       .then(data => this.furnitures = data)
       .catch(err => console.log(err.message))
