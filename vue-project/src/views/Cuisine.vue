@@ -7,7 +7,7 @@ export default {
   },
 
   mounted() {
-    fetch('http://localhost:3001/meubles/category/cuisine')
+    fetch('http://localhost:3000/meubles/category/cuisine')
       .then(response => response.json())
       .then(data => this.furnitures = data)
       .catch(err => console.log(err.message))
@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div class="cuisine">
-    <h1>Page Cuisine</h1>
+    <h1>Cuisine</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
           <RouterLink to="/cuisine"><img v-bind:src="f.photo1" class="image"/></RouterLink>

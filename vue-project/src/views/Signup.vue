@@ -1,10 +1,17 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div>
-    <!--<p>Page de Connexion</p>-->
+    <!--<p>Page d'inscription</p>-->
     <div class="content">
-      <div class="form1">
-        <h2>Login</h2>
+      <div class="signup">
+        <h2>Inscription</h2>
         <!--<input type="name" name="" placeholder="Enter Name Here" />-->
+          <input
+          type="nom"
+          name="nom"
+          v-model="nom"
+          placeholder="Enter a name Here"
+        />
         <input
           type="mail"
           name="mail"
@@ -17,9 +24,14 @@
           v-model="password"
           placeholder="Enter Password Here"
         />
-        <button class="btnn" type="button" v-on:click="login()">Login</button>
+         <input
+          type="adresse"
+          name="adresse"
+          v-model="adresse"
+          placeholder="Enter adress Here"
+        />
+        <button class="btnn" type="button" v-on:click="signup()">Signup</button>
 
-        <p class="liw"><a :href="'/signup/'">Pas de compte? Inscrivez-vous.</a></p>
       </div>
     </div>
   </div>
@@ -27,25 +39,26 @@
 
 <script>
 export default {
-  name: "App",
   data() {
     return {
+      nom: "",
       mail: "",
-      password: ""
+      password: "",
+      adresse: ""
     };
   },
   methods: {
-    async login() {
-   // console.warn(this.mail, this.password)
-      const { mail, password } = this;
+   async signup() {
+    console.warn(this.nom, this.mail, this.password, this.adresse);
+      const { nom, mail, password, adresse } = this;
       const res = await fetch(
-        "http://localhost:3000/login/",
+        "http://localhost:3000/signup/",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({ mail, password })
+          body: JSON.stringify({nom, mail, password, adresse})
         }
       );
       const data = await res.json();
@@ -106,7 +119,7 @@ export default {
     letter-spacing: 2px;
 }
 
-.form1{
+.signup{
     width: 285px;
     height: 370px;
     background: linear-gradient(to top, rgba(240, 235, 235, 0.84)50%,rgba(240, 235, 235, 0.84)50%);
@@ -118,7 +131,7 @@ export default {
     padding: 25px;
 }
 
-.form1 h2{
+.signup h2{
     width: 220px;
     font-family: sans-serif;
     text-align: center;
@@ -130,7 +143,7 @@ export default {
     padding: 8px;
 }
 
-.form1 input{
+.signup input{
     width: 227px;
     height: 35px;
     background: transparent;
@@ -145,7 +158,7 @@ export default {
     font-family: sans-serif;
 }
 
-.form1 input:focus{
+.signup input:focus{
     outline: none;
 }
 
@@ -175,13 +188,13 @@ export default {
     color: #000;
     font-weight: bold;
 }
-.form1 .link{
+.signup .link{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
-.form1 .link a{
+.signup .link a{
     text-decoration: none;
     color: #769f5b;
 }

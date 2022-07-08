@@ -16,6 +16,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <li><RouterLink to="/chambre">CHAMBRE</RouterLink></li>
         <li><RouterLink to="/decoration">DECO</RouterLink></li>
         <li><RouterLink to="/login">LOGIN</RouterLink></li>
+        <li><RouterLink to="/signup">SIGNUP</RouterLink></li>
         <li><RouterLink to="/panier"><img src="/src/assets/img/icons/cart.png" id="cart"></RouterLink></li>
         </ul>
       </nav>
