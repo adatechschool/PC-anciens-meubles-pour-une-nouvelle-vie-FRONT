@@ -28,6 +28,9 @@ const parseAllFurniture = JSON.parse([allFurnitureObject]);
 */
 
 export default {
+   components: {
+    HelloWorld
+  },
   data() {
     return {
       furnitures: [],
