@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Page de Connexion</p>
+    <!--<p>Page de Connexion</p>-->
     <div class="content">
       <div class="form1">
         <h2>Login Here</h2>
@@ -58,14 +58,11 @@ export default {
 <style>
 
 
-
-
-
 .btn{
     width: 100px;
     height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
+    background: #769f5b;
+    /*border: 2px solid #ff7200;*/
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
@@ -89,7 +86,7 @@ export default {
 .content{
     width: 1200px;
     margin: auto;
-    color: #fff;
+    color: rgb(13, 13, 13);
     position: relative;
 }
 
@@ -110,9 +107,9 @@ export default {
 }
 
 .form1{
-    width: 280px;
+    width: 285px;
     height: 370px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background: linear-gradient(to top, rgba(240, 235, 235, 0.84)50%,rgba(240, 235, 235, 0.84)50%);
     position: absolute;
     top: 100px;
     left: 450px;
@@ -125,7 +122,7 @@ export default {
     width: 220px;
     font-family: sans-serif;
     text-align: center;
-    color: #ff7200;
+    color: #769f5b;
     font-size: 22px;
     background-color: #fff;
     border-radius: 10px;
@@ -137,7 +134,7 @@ export default {
     width: 227px;
     height: 35px;
     background: transparent;
-    border-bottom: 1px solid #ff7200;
+    border-bottom: 1px solid #769f5b;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -153,14 +150,14 @@ export default {
 }
 
 ::placeholder{
-    color: #fff;
+    color: rgb(135, 135, 135);
     font-family: Arial;
 }
 
 .btnn{
     width: 240px;
     height: 40px;
-    background: #ff7200;
+    background: #769f5b;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -171,7 +168,7 @@ export default {
 }
 .btnn:hover{
     background: #fff;
-    color: #ff7200;
+    color: #769f5b;
 }
 .btnn a{
     text-decoration: none;
@@ -186,29 +183,15 @@ export default {
 }
 .form1 .link a{
     text-decoration: none;
-    color: #ff7200;
+    color: #769f5b;
 }
 .liw{
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }
-.icons a{
-    color: #fff;
-}
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-.icons ion-icon:hover{
-    color: #ff7200;
-}
 
-.form2{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-}
+
+
 
 </style>

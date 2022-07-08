@@ -22,7 +22,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
     </div>
     
-    <HelloWorld />
   </header>
 
   <RouterView />
@@ -62,10 +61,12 @@ nav ul li a {
 
 #logo {
   margin-right: auto; 
-  border-top: 4px solid #000;
-  border-bottom : 4px solid #000;
+  border-top: 4px solid rgb(32, 32, 32);
+  border-bottom : 4px solid rgb(32, 32, 32);
   text-decoration: none;
   font-weight: 700;
+  color: #509948;
+  font-size: 1.5em; 
 }
 
 
