@@ -4,6 +4,7 @@ import Chambre from "@/views/Chambre.vue";
 import Cuisine from "@/views/Cuisine.vue";
 import Decoration from "@/views/Decoration.vue";
 import Login from "@/views/Login.vue";
+import Signup from "@/views/Signup.vue";
 import Salon from "@/views/Salon.vue";
 import Panier from "@/views/Panier.vue";
 import Produit from "@/views/Produit.vue";
@@ -36,6 +37,11 @@ const router = createRouter({
       path: "/login",
       name: "Login",
       component: Login,
+    },
+    {
+      path: "/signup",
+      name: "Signup",
+      component: Signup,
     },
     {
       path: "/salon",
