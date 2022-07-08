@@ -28,7 +28,9 @@ const parseAllFurniture = JSON.parse([allFurnitureObject]);
 */
 
 export default {
-   components: {
+
+  components: {
+
     HelloWorld
   },
   data() {
@@ -51,12 +53,13 @@ export default {
 <template>
 
 <HelloWorld />
+<!-- <meubleId :id="f.id"/> -->
 
   <div class="home">
     <h1>Home</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
-          <RouterLink to="/cuisine"><img v-bind:src="f.photo1" class="image"/></RouterLink>
+          <RouterLink :to="'/produit/' + f.id"><img v-bind:src="f.photo1" class="image"/></RouterLink>
           <h2>{{ f.type }}</h2>
           <div class="infos">
           <p>{{ f.prix }} €</p>
