@@ -6,6 +6,8 @@ import Decoration from "@/views/Decoration.vue";
 import Login from "@/views/Login.vue";
 import Salon from "@/views/Salon.vue";
 import Panier from "@/views/Panier.vue";
+import Produit from "@/views/Produit.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +47,11 @@ const router = createRouter({
       name: "Panier",
       component: Panier,
     },
+    {
+      path: "/produit/:id",
+      name: "Produit",
+      component: Produit,
+    }
   ],
 });
 

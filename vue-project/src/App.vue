@@ -22,7 +22,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
     </div>
     
-    <HelloWorld />
+    <!-- <HelloWorld /> -->
   </header>
 
   <RouterView />
