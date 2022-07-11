@@ -98,7 +98,7 @@ export default {
   justify-content: space-between;
   border-bottom: 1px solid rgb(0, 0, 0);
   padding-top: 30px;
-  overflow: scroll;
+  /* overflow: scroll; */
   max-height: 100%;
 }
 
