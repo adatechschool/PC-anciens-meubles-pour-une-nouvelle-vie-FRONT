@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <script>
 export default {
   data() {
@@ -17,7 +18,7 @@ export default {
 
 <template>
   <div class="salon">
-    <h1>Page Salon</h1>
+    <h1>Salon</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
           <RouterLink :to="'/produit/' + f.id"><img v-bind:src="f.photo1" class="image"/></RouterLink>

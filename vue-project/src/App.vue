@@ -16,13 +16,13 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <li><RouterLink to="/chambre">CHAMBRE</RouterLink></li>
         <li><RouterLink to="/decoration">DECO</RouterLink></li>
         <li><RouterLink to="/login">LOGIN</RouterLink></li>
+        <li><RouterLink to="/signup">SIGNUP</RouterLink></li>
         <li><RouterLink to="/panier"><img src="/src/assets/img/icons/cart.png" id="cart"></RouterLink></li>
         </ul>
       </nav>
 
     </div>
     
-    <!-- <HelloWorld /> -->
   </header>
 
   <RouterView />
@@ -62,10 +62,12 @@ nav ul li a {
 
 #logo {
   margin-right: auto; 
-  border-top: 4px solid #000;
-  border-bottom : 4px solid #000;
+  border-top: 4px solid rgb(32, 32, 32);
+  border-bottom : 4px solid rgb(32, 32, 32);
   text-decoration: none;
   font-weight: 700;
+  color: #509948;
+  font-size: 1.5em; 
 }
 
 

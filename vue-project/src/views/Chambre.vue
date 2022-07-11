@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div class="chambre">
-    <h1>Page Chambre</h1>
+    <h1>Chambre</h1>
       <div class="flex-container">
         <div v-for="f in furnitures" :key="f.id" class="meuble">
           <RouterLink :to="'/produit/' + f.id"><img v-bind:src="f.photo1" class="image"/></RouterLink>
