@@ -48,10 +48,11 @@ export default {
           },
           body: JSON.stringify({ mail, password }),
         });
-        if (response.ok) {
+        if (res.ok) {
           const data = await res.json();
           console.log(data);
         }
+        throw new Error('Request failed!'); 
       } catch (error) {
         console.log(error);
       }
