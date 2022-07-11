@@ -44,7 +44,7 @@ h1 {
   width: 100%;
   height: 81vh;
   left: 0px;
-  top: 138px;
+  top: 8vh;
   background-color: rgba(240, 235, 235, 0.84);
 }
 
