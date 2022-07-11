@@ -5,6 +5,7 @@
       <div class="form1">
         <h2>Login</h2>
         <!--<input type="name" name="" placeholder="Enter Name Here" />-->
+        <form action="/login" method="post">
         <input
           type="mail"
           name="mail"
@@ -17,6 +18,7 @@
           v-model="password"
           placeholder="Enter Password Here"
         />
+        </form>
         <button class="btnn" type="button" v-on:click="login()">Login</button>
 
         <p class="liw">
@@ -38,21 +40,23 @@ export default {
   },
   methods: {
     async login() {
-      // console.warn(this.mail, this.password)
+      //console.warn(this.mail, this.password)
       const { mail, password } = this;
       try {
-        const res = await fetch("http://localhost:3001/login/", {
+        let res = await fetch("http://localhost:3001/login",{
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ mail, password }),
-        });
+          body: JSON.stringify({ mail, password })
+                  });
         if (res.ok) {
           const data = await res.json();
-          console.log(data);
+          console.log("Data",data);
+          this.$router.push({path:'/home'}) 
         }
-        throw new Error('Request failed!'); 
+      console.log('Coucou');
+        throw new Error('Request failed!');
       } catch (error) {
         console.log(error);
       }
