@@ -50,13 +50,12 @@ export default {
           },
           body: JSON.stringify({ mail, password })
                   });
-        if (res.ok) {
-          const data = await res.json();
-          console.log("Data",data);
-          this.$router.push({path:'/home'}) 
+        if (res.status == 200) {
+          this.$router.push('/home') 
+        } else {
+          throw new Error('Request failed!');
         }
       console.log('Coucou');
-        throw new Error('Request failed!');
       } catch (error) {
         console.log(error);
       }
